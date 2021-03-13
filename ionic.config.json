@@ -1,0 +1,7 @@
+{
+  "name": "cinemapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
