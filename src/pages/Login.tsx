@@ -57,12 +57,12 @@ const Login: React.FC = () => {
                                 <IonInput autocomplete="off" type="password" placeholder="contraseña" value={passwordRef} onIonChange={(e: any) => setpasswordRef(e.detail.value)} ></IonInput>
                             </IonItem>
                         </div>
-                        <p className="text-center mt-5">
-                            <Link to="/reset-password">¿Olvidaste tu contraseña?</Link>
+                        <p className="text-center mt-5" onClick={()=>history.push('/reset-password')}>
+                            ¿Olvidaste tu contraseña?
                         </p>
                         <IonButton disabled={loading} type="submit" className="loginButton" size="default">Iniciar sesión</IonButton>
-                        <p className="text-center registLink">
-                            <Link to="/signup">¿No tienes cuenta? regístrate</Link>
+                        <p className="text-center registLink" onClick={()=>history.push('/signup')}>
+                            ¿No tienes cuenta? regístrate
                         </p>
                     </form>
                 </div>

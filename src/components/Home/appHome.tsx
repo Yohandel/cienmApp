@@ -17,16 +17,16 @@ const AppHome = () => {
                 </div>
             </div>
             <div className="bocao">
-                <img src="assets/images/028-camera.png" style={{ marginRight: "10px" }} alt="" /> <h2>Peliculas disponibles</h2>
-            </div>
-            <Tickets />
-            <div className="bocao">
                 <img src="assets/images/008-popcorn.png" style={{ marginRight: "10px" }} alt="" /> <h2>Agrega un bocao</h2>
             </div>
 
             <div className="food">
                 <Food />
             </div>
+            <div className="bocao">
+                <img src="assets/images/028-camera.png" style={{ marginRight: "10px" }} alt="" /> <h2>Peliculas disponibles</h2>
+            </div>
+            <Tickets />
         </div>
     )
 }

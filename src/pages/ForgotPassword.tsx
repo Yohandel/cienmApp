@@ -16,6 +16,8 @@ const ForgotPassword: React.FC = () => {
     const [showMess, setShowMess] = useState(false)
     const [message, setMessage] = useState("")
 
+    const history = useHistory();
+
     async function handleSubmit(e: any) {
         e.preventDefault()
 
@@ -64,7 +66,7 @@ const ForgotPassword: React.FC = () => {
                         </div>
 
                         <IonButton disabled={loading} type="submit" className="forgotPassButton" size="default">Iniciar sesión</IonButton>
-                        <p className="text-center registLink">
+                        <p className="text-center registLink" onClick={()=>history.push('/login')}>
                         <Link to="login">Log in</Link>
                         </p>
                     </form>

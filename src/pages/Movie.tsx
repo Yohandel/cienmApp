@@ -132,7 +132,7 @@ const Movie: React.FC = () => {
                         </IonItem>
 
                         <div className="totalContainer text-center">
-                            <h1 className="total">$ {(150 + 150) + (movie && movie.price * ticketsNumber)} DOP.</h1>
+                            <h1 className="total">$ {(snacks && snacks.length * 150) + (movie && movie.price * ticketsNumber)} DOP.</h1>
                         </div>
                         {currentUser ?
                             <IonButton disabled={ticketsNumber <= 0} className="orderButton" size="default" type="submit">Realizar pago</IonButton> :

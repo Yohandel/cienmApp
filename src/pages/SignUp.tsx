@@ -64,8 +64,8 @@ const Signup: React.FC = () => {
                             </IonItem>
                         </div>
                         <IonButton type="submit" disabled={loading} className="SignupButton" size="default">Registrarme</IonButton>
-                        <p className="text-center loginLink">
-                            <Link to ="/login">¿Ya tienes cuenta? inicia sesión</Link>
+                        <p className="text-center loginLink"  onClick={()=>history.push('/login')}>
+                            ¿Ya tienes cuenta? inicia sesión
                         </p>
                         </form>
                     </div>
