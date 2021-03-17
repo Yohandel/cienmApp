@@ -2,10 +2,10 @@ import { IonContent, IonPage, IonButton, IonIcon, IonLabel, IonInput, IonItem } 
 import { star } from 'ionicons/icons';
 import { useAuth } from '../context/AuthContext'
 import React, { useState } from 'react';
-import {Link, useHistory} from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import './ForgotPassword.css';
 import Alert from '../components/Alerts/Alert';
-import {Toast} from '../components/Alerts/Toast'
+import { Toast } from '../components/Alerts/Toast'
 
 const ForgotPassword: React.FC = () => {
     const { resetPassword } = useAuth()
@@ -48,9 +48,9 @@ const ForgotPassword: React.FC = () => {
                 />
 
                 <Toast
-                show={showMess}
-                close={()=> setShowMess(false)}
-                message={message}
+                    show={showMess}
+                    close={() => setShowMess(false)}
+                    message={message}
                 />
                 <div className="forgotPassContainer">
                     <div className="forgotPassImage">
@@ -66,8 +66,8 @@ const ForgotPassword: React.FC = () => {
                         </div>
 
                         <IonButton disabled={loading} type="submit" className="forgotPassButton" size="default">Iniciar sesión</IonButton>
-                        <p className="text-center registLink" onClick={()=>history.push('/login')}>
-                        <Link to="login">Log in</Link>
+                        <p className="text-center registLink" onClick={() => history.push('/login')}>
+                            Log in
                         </p>
                     </form>
                 </div>
