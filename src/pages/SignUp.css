@@ -1,0 +1,40 @@
+.SignupContainer{
+    padding: 15px;
+    }
+    
+    .SignupImage{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    }
+    
+    .SignupImage img{
+        margin-left: 7px;
+    }
+    
+    .SignupForm{
+        --highlight-color-focused:#c50000;
+        --border-color:#c50000;
+        --color:#c50000;
+    }
+    
+    .inputLabel{
+       --color:red;
+    }
+    
+    :is(.text-center, a){
+        color: #c50000;
+    }
+    
+    .SignupButton{
+        width: 100%;
+        --border-radius: 7px;
+        text-transform: inherit;
+        --background:#c50000;
+        height: 40px;
+        margin-top: 35px;
+    }
+    
+    .loginLink{
+        margin-top: 70px;
+    }

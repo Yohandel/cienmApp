@@ -1,0 +1,43 @@
+.addButton{
+    height: 70px;
+    width: 70px;
+    opacity: 0.8;
+    margin-bottom: 45px;
+}
+
+.bgFood{
+    height:100%;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items:flex-end;
+    background: #0000006b 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.listFood{
+    margin: auto;
+    display: flex;
+    height:320px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-size:cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+
+.containerFood{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.containerFood li{
+    width: 48%;
+}

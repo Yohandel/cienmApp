@@ -1,0 +1,39 @@
+.loginContainer{
+padding: 15px;
+}
+
+.loginImage{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.loginImage img{
+    margin-left: 7px;
+}
+
+.loginForm{
+    --highlight-color-focused:#c50000;
+    --border-color:#c50000;
+    --color:#c50000;
+}
+
+.inputLabel{
+   --color:red;
+}
+
+:is(.text-center, a){
+    color: #c50000;
+}
+
+.loginButton{
+    width: 100%;
+    --border-radius: 7px;
+    text-transform: inherit;
+    --background:#c50000;
+    height: 40px;
+}
+
+.registLink{
+    margin-top: 80px;
+}

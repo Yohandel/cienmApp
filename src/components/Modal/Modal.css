@@ -1,0 +1,8 @@
+.my-custom-modal{
+    --border-radius:40px 40px 0px 0px;
+
+}
+
+.my-custom-modal img{
+   width: 55px;
+}
